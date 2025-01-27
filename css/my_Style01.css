@@ -1,0 +1,186 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #444;
+    background-color: #f0f8ff; /* Light blue background */
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #2c3e50; /* Dark blue-gray */
+    text-align: center;
+}
+
+a {
+    color: #3498db; /* Sky blue */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #87ceeb; /* Lighter sky blue */
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 24px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e3f2fd; /* Very light blue */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.site-title {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.site-nav li {
+    margin-right: 20px;
+}
+
+.site-nav a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2c3e50;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.site-nav a:hover {
+    background-color: #87ceeb; /* Lighter sky blue */
+    color: #fff;
+}
+
+/* Main section styles */
+main {
+    margin-top: 80px; /* Account for fixed header */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Specific styles for Skills & Certifications and Education sections */
+#skills, #education {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#skills ul, #education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li, #education li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+footer {
+    text-align: center;
+    background-color: #e3f2fd;
+    color: #2c3e50;
+    padding: 10px 0;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .site-title {
+        font-size: 24px;
+    }
+
+    .site-nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .site-nav li {
+        margin-bottom: 10px;
+    }
+
+    .site-nav a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    main {
+        margin-top: 140px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 22px;
+    }
+
+    .site-nav a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+}
